@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-morning: linear-gradient(to top, #212325, #527191);  /* Manhã / 06:00 - 12:00 */
+    --bg-afternoon: linear-gradient(to top, #212325, #918052);  /* Tarde / 12:00 - 18:00 */
+    --bg-night: linear-gradient(to top, #212325, #13242e);  /* Noite / 18:00 - 00:00 */
+    --bg-midnight: linear-gradient(to top, #212325, #021324);  /* Madru / 00:00 - 06:00 */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-watch {
+    width: 50rem;
+    height: 30rem;
+    padding: 3rem;
+    border-radius: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-time {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.card-time {
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    box-shadow: 3px 3px 5px 1px #00000069;
+    min-width: 13rem;
+    height: 16rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .span-time {
+        font-size: 5.5rem;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    & .span-desc {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fff;
+    }
+}
+
+.container-date {
+    display: flex;
+
+    & p {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+}
